@@ -1,0 +1,1435 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ==========================================
+       01. DOCUMENT CONFIGURATION
+  =========================================== -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="Creative digital services, premium web design and modern digital experiences."
+  >
+
+  <meta name="theme-color" content="#061a38">
+
+  <title>Creative Studio | Digital Experiences</title>
+
+  <!-- ==========================================
+       02. FONT CONNECTION
+  =========================================== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- ==========================================
+       03. MAIN CSS
+       Keep the exact filename: style.css
+  =========================================== -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- ==========================================
+       04. GSAP LIBRARIES
+       defer preserves execution order
+  =========================================== -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"
+    defer>
+  </script>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/ScrollTrigger.min.js"
+    defer>
+  </script>
+
+  <!-- ==========================================
+       05. MAIN JAVASCRIPT
+       Load after GSAP scripts
+  =========================================== -->
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  
+
+  
+<!-- ==========================================
+     PREMIUM WEBSITE PRELOADER
+========================================== -->
+
+<div
+  class="site-preloader"
+  id="sitePreloader"
+  role="status"
+  aria-label="Loading website"
+  aria-live="polite"
+>
+  <div class="preloader-content">
+
+    <!-- Brand Logo -->
+    <div class="preloader-logo-wrap">
+
+      <div class="preloader-orbit preloader-orbit-one"></div>
+      <div class="preloader-orbit preloader-orbit-two"></div>
+
+      <div class="preloader-logo">
+        <!-- Replace with your actual logo path -->
+        <img
+          src="logo.png"
+          alt=""
+          onerror="this.style.display='none'"
+        />
+
+        <span class="preloader-fallback-logo">B</span>
+      </div>
+
+    </div>
+
+    <!-- Brand Name -->
+    <h2 class="preloader-brand">
+      BLUENESS STUDIO
+    </h2>
+
+    <p class="preloader-tagline">
+      CREATING SOMETHING EXTRAORDINARY
+    </p>
+
+    <!-- Animated Progress Indicator -->
+    <div
+      class="preloader-progress"
+      role="presentation"
+    >
+      <span class="preloader-progress-bar"></span>
+    </div>
+
+    <p class="preloader-status">
+      Preparing your experience<span class="preloader-dots"></span>
+    </p>
+
+  </div>
+
+  <span class="preloader-corner preloader-corner-one"></span>
+  <span class="preloader-corner preloader-corner-two"></span>
+
+</div>
+
+<!-- END PRELOADER -->
+
+
+  <!-- ==========================================
+       SECTION 01: NAVBAR
+  =========================================== -->
+  <header class="site-header" id="siteHeader">
+
+    <nav class="nav-container" aria-label="Main navigation">
+
+      <!-- BRAND -->
+      <a class="brand" href="#home" aria-label="Home">
+
+        <img
+          class="brand-logo"
+          src="logo.jpg"
+          alt=""
+          width="48"
+          height="48"
+        >
+
+        <span class="brand-text">
+          Blueness<span>Studio</span>
+        </span>
+
+      </a>
+
+      <!-- DESKTOP NAVIGATION -->
+      <div class="desktop-navigation">
+
+        <a class="nav-link active" href="#home">Home</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#services">Services</a>
+        <a class="nav-link" href="#portfolio">Portfolio</a>
+
+      </div>
+
+      <!-- DESKTOP CTA -->
+      <a class="nav-button" href="#contact">
+        Let's Talk
+        <span aria-hidden="true">↗</span>
+      </a>
+
+      <!-- MOBILE HAMBURGER -->
+      <button
+        class="hamburger"
+        id="hamburger"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-controls="mobileMenu"
+        aria-expanded="false"
+      >
+        <span class="hamburger-line line-one"></span>
+        <span class="hamburger-line line-two"></span>
+        <span class="hamburger-line line-three"></span>
+      </button>
+
+    </nav>
+
+  </header>
+
+
+  <!-- ==========================================
+       MOBILE MENU BACKDROP
+  =========================================== -->
+  <div
+    class="menu-backdrop"
+    id="menuBackdrop"
+    aria-hidden="true">
+  </div>
+
+
+  <!-- ==========================================
+       MOBILE MENU
+  =========================================== -->
+  <aside
+    class="mobile-menu"
+    id="mobileMenu"
+    aria-label="Mobile navigation"
+    aria-hidden="true"
+    inert
+  >
+
+    <div class="mobile-menu-content">
+
+      <p class="mobile-menu-label">
+        NAVIGATION
+      </p>
+
+      <nav class="mobile-nav-links" aria-label="Mobile links">
+
+        <a class="mobile-nav-link" href="#home">
+          Home
+          <small>01</small>
+        </a>
+
+        <a class="mobile-nav-link" href="#about">
+          About
+          <small>02</small>
+        </a>
+
+        <a class="mobile-nav-link" href="#services">
+          Services
+          <small>03</small>
+        </a>
+
+        <a class="mobile-nav-link" href="#portfolio">
+          Portfolio
+          <small>04</small>
+        </a>
+
+        <a class="mobile-nav-link" href="#contact">
+          Contact
+          <small>05</small>
+        </a>
+
+      </nav>
+
+      <a class="mobile-menu-button" href="#contact">
+        Start a Project
+        <span aria-hidden="true">↗</span>
+      </a>
+
+    </div>
+
+    <div class="mobile-menu-bottom">
+      <span>CREATIVE THINKING. DIGITAL EXCELLENCE.</span>
+    </div>
+
+  </aside>
+
+
+  <!-- ==========================================
+       MAIN WEBSITE CONTENT
+  =========================================== -->
+  <main>
+
+    <!-- ========================================
+         SECTION 02: HERO
+    ========================================= -->
+    <section class="hero-section" id="home">
+
+      <div class="hero-grid-bg" aria-hidden="true"></div>
+
+      <div
+        class="hero-ambient hero-ambient-one"
+        aria-hidden="true">
+      </div>
+
+      <div
+        class="hero-ambient hero-ambient-two"
+        aria-hidden="true">
+      </div>
+
+      <div class="hero-container">
+
+        <!-- HERO CONTENT -->
+        <div class="hero-content">
+
+          <div class="hero-badge">
+            <span class="hero-badge-dot"></span>
+            <span>CREATIVE DIGITAL STUDIO</span>
+          </div>
+
+          <h1 class="hero-heading">
+            We Create
+            <span class="hero-gradient-text">Digital</span>
+            Experiences.
+          </h1>
+
+          <p class="hero-description">
+            We transform creative ideas into beautiful
+            digital experiences through innovative design,
+            modern technology and meaningful interactions.
+          </p>
+
+          <div class="hero-actions">
+
+            <a
+              href="#services"
+              class="hero-btn hero-btn-primary"
+            >
+              Explore Services
+              <span aria-hidden="true">↗</span>
+            </a>
+
+            <a
+              href="#portfolio"
+              class="hero-btn hero-btn-outline"
+            >
+              View Our Work
+              <span aria-hidden="true">→</span>
+            </a>
+
+          </div>
+
+          <div class="hero-microcopy">
+            <span class="hero-microcopy-line"></span>
+            <span>DESIGN • INNOVATION • TECHNOLOGY</span>
+          </div>
+
+        </div>
+
+
+        <!-- HERO 3D VISUAL -->
+        <div class="hero-visual">
+
+          <div class="hero-visual-enter">
+
+            <div
+              class="hero-parallax"
+              id="heroParallax"
+            >
+
+              <div
+                class="hero-visual-glow"
+                aria-hidden="true">
+              </div>
+
+              <div
+                class="hero-orbit hero-orbit-one"
+                aria-hidden="true">
+              </div>
+
+              <div
+                class="hero-orbit hero-orbit-two"
+                aria-hidden="true">
+              </div>
+
+              <div class="hero-floating">
+
+                <img
+                  src="hero-3d-ribbon.png"
+                  alt="Abstract turquoise and blue 3D ribbon sculpture"
+                  class="hero-image"
+                  width="700"
+                  height="700"
+                  fetchpriority="high"
+                >
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <a href="#about" class="hero-scroll">
+
+        <span class="hero-scroll-mouse">
+          <span class="hero-scroll-wheel"></span>
+        </span>
+
+        <span>SCROLL TO EXPLORE</span>
+
+      </a>
+
+    </section>
+
+
+    <!-- ========================================
+         SECTION 03: ABOUT US
+    ========================================= -->
+    <section class="about-section" id="about">
+
+      <div
+        class="about-bg-glow"
+        aria-hidden="true">
+      </div>
+
+      <div class="about-container">
+
+        <!-- ABOUT VISUAL -->
+        <div class="about-visual">
+
+          <div class="about-image-frame">
+
+            <img
+              src="about-3d-visual.png"
+              alt="Futuristic turquoise glass ribbon sculpture"
+              class="about-main-image"
+              width="720"
+              height="900"
+              loading="lazy"
+              decoding="async"
+            >
+
+            <div
+              class="about-image-overlay"
+              aria-hidden="true">
+            </div>
+
+          </div>
+
+          <div class="about-floating-card">
+
+            <span
+              class="about-card-symbol"
+              aria-hidden="true">✦</span>
+
+            <div>
+              <strong>Creative Thinking</strong>
+              <span>Built for digital growth</span>
+            </div>
+
+          </div>
+
+          <div
+            class="about-decoration"
+            aria-hidden="true">
+          </div>
+
+        </div>
+
+
+        <!-- ABOUT CONTENT -->
+        <div class="about-content">
+
+          <div class="about-eyebrow">
+            <span class="about-eyebrow-line"></span>
+            <span>01 / ABOUT US</span>
+          </div>
+
+          <h2 class="about-heading">
+            We Transform Ideas Into
+            <span>Meaningful Digital Experiences.</span>
+          </h2>
+
+          <p class="about-description">
+            We bring together creative thinking,
+            thoughtful design and modern technology
+            to create digital solutions that connect
+            brands with people.
+          </p>
+
+          <p class="about-description about-description-two">
+            Our approach focuses on understanding
+            your goals, exploring possibilities and
+            building experiences that are functional,
+            engaging and designed to grow with you.
+          </p>
+
+          <div class="about-features">
+
+            <article class="about-feature-card">
+
+              <div
+                class="about-feature-icon"
+                aria-hidden="true">✧</div>
+
+              <h3>Creative Vision</h3>
+
+              <p>
+                Distinctive design shaped around
+                your brand and ideas.
+              </p>
+
+            </article>
+
+            <article class="about-feature-card">
+
+              <div
+                class="about-feature-icon"
+                aria-hidden="true">∞</div>
+
+              <h3>Smart Execution</h3>
+
+              <p>
+                Practical digital solutions
+                designed for real-world use.
+              </p>
+
+            </article>
+
+          </div>
+
+          <a href="#services" class="about-cta">
+            Discover Our Services
+            <span aria-hidden="true">↗</span>
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+   
+<!-- ==========================================
+     SECTION 04 — INFINITE PACKAGES CAROUSEL
+========================================== -->
+
+<section
+  class="services-section"
+  id="services"
+  aria-labelledby="services-heading"
+>
+  <div class="packages-ambient" aria-hidden="true"></div>
+
+  <div class="services-container">
+
+    <!-- SECTION INTRO -->
+    <header class="services-intro">
+
+      <div class="services-eyebrow">
+        <span class="services-eyebrow-line"></span>
+        <span>OUR PACKAGES / 02</span>
+      </div>
+
+      <h2 class="services-heading" id="services-heading">
+        Choose Your
+        <span>Growth Journey.</span>
+      </h2>
+
+      <p class="services-description">
+        From essential growth to a fully customized digital
+        experience, discover the package that fits your vision.
+      </p>
+
+    </header>
+
+
+    <!-- CAROUSEL CONTROLS -->
+    <div class="packages-toolbar">
+
+      <p class="packages-count">
+        <span class="packages-current">01</span>
+        <span class="packages-count-divider">/</span>
+        <span class="packages-total">04</span>
+        <span class="packages-count-label">PACKAGES</span>
+      </p>
+
+      <div class="packages-controls">
+
+        <button
+          class="packages-arrow packages-prev"
+          type="button"
+          aria-label="Previous package"
+        >
+          <span aria-hidden="true">←</span>
+        </button>
+
+        <button
+          class="packages-arrow packages-next"
+          type="button"
+          aria-label="Next package"
+        >
+          <span aria-hidden="true">→</span>
+        </button>
+
+      </div>
+
+    </div>
+
+
+    <!-- CAROUSEL VIEWPORT -->
+    <div
+      class="packages-viewport"
+      id="packagesViewport"
+      aria-label="Our service packages"
+    >
+
+      <div class="packages-track" id="packagesTrack">
+
+        <!-- ==================================
+             PACKAGE 01 — SILVER
+        =================================== -->
+        <article class="package-card package-silver">
+
+          <div class="package-card-inner">
+
+            <div class="package-topline">
+              <span class="package-index">01 / ESSENTIAL</span>
+              <span class="package-status">SILVER</span>
+            </div>
+
+            <div class="package-symbol silver-symbol"
+                 aria-hidden="true">
+              <span>✧</span>
+            </div>
+
+            <h3 class="package-title">Silver</h3>
+
+            <p class="package-description">
+              A starting point for building your digital presence.
+            </p>
+
+            <div class="package-divider"></div>
+
+            <p class="package-includes">PACKAGE HIGHLIGHTS</p>
+
+            <ul class="package-features">
+              <li>
+                <span class="feature-check">✓</span>
+                3,000 Facebook Followers
+              </li>
+              <li>
+                <span class="feature-check">✓</span>
+                15 Posts with Likes & Comments
+              </li>
+              <li>
+                <span class="feature-check">✓</span>
+                3 Days Free Trial Boost
+              </li>
+            </ul>
+
+            <a href="#contact" class="package-button">
+              Explore Silver
+              <span aria-hidden="true">↗</span>
+            </a>
+
+          </div>
+
+        </article>
+
+
+        <!-- ==================================
+             PACKAGE 02 — GOLD
+        =================================== -->
+        <article class="package-card package-gold">
+
+          <div class="package-card-inner">
+
+            <div class="package-topline">
+              <span class="package-index">02 / PREMIUM</span>
+              <span class="package-status">GOLD</span>
+            </div>
+
+            <div class="package-symbol gold-symbol"
+                 aria-hidden="true">
+              <span>✦</span>
+            </div>
+
+            <h3 class="package-title">Gold</h3>
+
+            <p class="package-description">
+              A premium package for your next growth milestone.
+            </p>
+
+            <div class="package-divider"></div>
+
+            <p class="package-includes">PACKAGE HIGHLIGHTS</p>
+
+            <ul class="package-features">
+              <li>
+                <span class="feature-check">✓</span>
+                3,000 Facebook Followers
+              </li>
+              <li>
+                <span class="feature-check">✓</span>
+                15 Posts with Likes & Comments
+              </li>
+              <li>
+                <span class="feature-check">✓</span>
+                3 Days Free Trial Boost
+              </li>
+            </ul>
+
+            <a href="#contact" class="package-button">
+              Explore Gold
+              <span aria-hidden="true">↗</span>
+            </a>
+
+          </div>
+
+        </article>
+
+
+        <!-- ==================================
+             PACKAGE 03 — PLATINUM
+        =================================== -->
+        <article class="package-card package-platinum">
+
+          <div class="package-card-inner">
+
+            <div class="package-topline">
+              <span class="package-index">03 / ADVANCED</span>
+              <span class="package-status">PLATINUM</span>
+            </div>
+
+            <div class="package-symbol platinum-symbol"
+                 aria-hidden="true">
+              <span>◇</span>
+            </div>
+
+            <h3 class="package-title">Platinum</h3>
+
+            <p class="package-description">
+              A refined solution for ambitious digital goals.
+            </p>
+
+            <div class="package-divider"></div>
+
+            <p class="package-includes">PACKAGE HIGHLIGHTS</p>
+
+            <ul class="package-features">
+              <li>
+                <span class="feature-check">✓</span>
+                3,000 Facebook Followers
+              </li>
+              <li>
+                <span class="feature-check">✓</span>
+                15 Posts with Likes & Comments
+              </li>
+              <li>
+                <span class="feature-check">✓</span>
+                3 Days Free Trial Boost
+              </li>
+            </ul>
+
+            <a href="#contact" class="package-button">
+              Explore Platinum
+              <span aria-hidden="true">↗</span>
+            </a>
+
+          </div>
+
+        </article>
+
+
+        <!-- ==================================
+             PACKAGE 04 — INFINITY
+        =================================== -->
+        <article class="package-card package-infinity">
+
+          <div class="package-card-inner">
+
+            <div class="package-topline">
+              <span class="package-index">04 / CUSTOM</span>
+              <span class="package-status">INFINITY</span>
+            </div>
+
+            <!-- CSS 3D COSMIC ORB -->
+            <div class="infinity-art" aria-hidden="true">
+
+              <div class="infinity-orbit infinity-orbit-one"></div>
+              <div class="infinity-orbit infinity-orbit-two"></div>
+
+              <div class="infinity-orb">
+                <div class="infinity-orb-core"></div>
+                <div class="infinity-orb-shine"></div>
+                <div class="infinity-orb-crack"></div>
+              </div>
+
+              <span class="infinity-particle particle-one"></span>
+              <span class="infinity-particle particle-two"></span>
+              <span class="infinity-particle particle-three"></span>
+              <span class="infinity-particle particle-four"></span>
+
+            </div>
+
+            <h3 class="package-title">Infinity</h3>
+
+            <p class="package-description">
+              Your vision. Your priorities. Your own custom package.
+            </p>
+
+            <div class="package-divider"></div>
+
+            <p class="package-includes">BUILT AROUND YOU</p>
+
+            <ul class="package-features">
+              <li>
+                <span class="feature-check">✦</span>
+                Customizable Service Selection
+              </li>
+              <li>
+                <span class="feature-check">✦</span>
+                Flexible Package Configuration
+              </li>
+              <li>
+                <span class="feature-check">✦</span>
+                Tailored to Your Goals & Budget
+              </li>
+            </ul>
+
+            <a href="#contact" class="package-button">
+              Customize Infinity
+              <span aria-hidden="true">↗</span>
+            </a>
+
+          </div>
+
+        </article>
+
+      </div>
+
+    </div>
+
+
+    <!-- CAROUSEL DOTS -->
+    <div
+      class="packages-pagination"
+      id="packagesPagination"
+      aria-label="Choose a package"
+    ></div>
+
+
+    <!-- BOTTOM MESSAGE -->
+    <div class="packages-footer">
+
+      <p>
+        Something unique in mind?
+        <span>Let's create a package around your vision.</span>
+      </p>
+
+      <a href="#contact" class="packages-footer-link">
+        Build Your Own Package
+        <span aria-hidden="true">↗</span>
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- END SECTION 04 -->
+
+
+
+    <!-- ========================================
+         SECTION 05: PORTFOLIO PLACEHOLDER
+         Replace with the final Portfolio Section later
+    ========================================= -->
+    
+<!-- ==========================================
+     SECTION 05 — SELECTED PORTFOLIO
+========================================== -->
+
+      <section
+  class="portfolio-section"
+  id="portfolio"
+  aria-labelledby="portfolio-heading"
+>
+  <div class="portfolio-ambient" aria-hidden="true"></div>
+
+  <div class="portfolio-container">
+
+    <!-- SECTION INTRO -->
+    <header class="portfolio-intro">
+
+      <div class="portfolio-eyebrow">
+        <span class="portfolio-eyebrow-line"></span>
+        <span>SELECTED WORKS / 03</span>
+      </div>
+
+      <h2 class="portfolio-heading" id="portfolio-heading">
+        A Few Projects.
+        <span>A Clear Vision.</span>
+      </h2>
+
+      <p class="portfolio-description">
+        A closer look at our creative direction, digital
+        presentation and social media service concepts.
+      </p>
+
+    </header>
+
+
+    <!-- EXACTLY TWO PORTFOLIO PROJECTS -->
+    <div class="portfolio-grid">
+
+      <!-- PROJECT 01 -->
+      <article class="portfolio-card portfolio-growth">
+
+        <a
+          class="portfolio-project-link"
+          href="riyad-portfolio.html"
+          aria-label="Discuss a social media growth project"
+        >
+
+          <!-- Visual cover -->
+          <div class="portfolio-visual growth-visual">
+
+            <div class="portfolio-visual-top">
+              <span>PROJECT / 01</span>
+              <span class="portfolio-visual-dot"></span>
+            </div>
+
+            <div class="growth-art" aria-hidden="true">
+
+              <div class="growth-ring growth-ring-one"></div>
+              <div class="growth-ring growth-ring-two"></div>
+
+              <div class="growth-main-icon">
+                <svg viewBox="0 0 100 100" fill="none">
+                  <path
+                    d="M20 69L39 49L53 60L79 29"
+                    stroke="currentColor"
+                    stroke-width="5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M61 29H79V47"
+                    stroke="currentColor"
+                    stroke-width="5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <circle
+                    cx="20" cy="69" r="5"
+                    fill="currentColor"
+                  />
+                  <circle
+                    cx="39" cy="49" r="5"
+                    fill="currentColor"
+                  />
+                  <circle
+                    cx="53" cy="60" r="5"
+                    fill="currentColor"
+                  />
+                </svg>
+              </div>
+
+              <span class="growth-floating growth-floating-one">
+                DIGITAL
+              </span>
+
+              <span class="growth-floating growth-floating-two">
+                GROWTH
+              </span>
+
+            </div>
+
+            <div class="portfolio-visual-bottom">
+              <span>SOCIAL MEDIA</span>
+              <span>STRATEGY & PRESENCE</span>
+            </div>
+
+          </div>
+
+
+          <!-- Project information -->
+          <div class="portfolio-info">
+
+            <div class="portfolio-meta">
+              <span>01 — SOCIAL MEDIA</span>
+              <span class="portfolio-arrow" aria-hidden="true">↗</span>
+            </div>
+
+            <h3 class="portfolio-title">
+              Social Media Growth
+            </h3>
+
+            <p class="portfolio-text">
+              A campaign presentation focused on Facebook
+              Page presence, audience development and
+              organized growth planning.
+            </p>
+
+            <div class="portfolio-tags">
+              <span>Facebook</span>
+              <span>Growth Strategy</span>
+              <span>Campaign</span>
+            </div>
+
+          </div>
+
+        </a>
+
+      </article>
+
+
+      <!-- PROJECT 02 -->
+      <article class="portfolio-card portfolio-content">
+
+        <a
+          class="portfolio-project-link"
+          href="abir-portfolio.html"
+          aria-label="Discuss a content and engagement project"
+        >
+
+          <!-- Visual cover -->
+          <div class="portfolio-visual content-visual">
+
+            <div class="portfolio-visual-top">
+              <span>PROJECT / 02</span>
+              <span class="portfolio-visual-dot"></span>
+            </div>
+
+            <div class="content-art" aria-hidden="true">
+
+              <div class="content-back-panel"></div>
+
+              <div class="content-main-panel">
+
+                <div class="content-panel-top">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+
+                <div class="content-panel-image">
+                  <div class="content-image-orb"></div>
+                  <span>CREATE</span>
+                  <strong>WITH PURPOSE.</strong>
+                </div>
+
+                <div class="content-panel-lines">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+
+              </div>
+
+              <div class="content-floating-icon content-heart">
+                ♥
+              </div>
+
+              <div class="content-floating-icon content-star">
+                ✦
+              </div>
+
+            </div>
+
+            <div class="portfolio-visual-bottom">
+              <span>CONTENT STUDIO</span>
+              <span>DESIGN & ENGAGEMENT</span>
+            </div>
+
+          </div>
+
+
+          <!-- Project information -->
+          <div class="portfolio-info">
+
+            <div class="portfolio-meta">
+              <span>02 — CONTENT CREATION</span>
+              <span class="portfolio-arrow" aria-hidden="true">↗</span>
+            </div>
+
+            <h3 class="portfolio-title">
+              Content & Engagement
+            </h3>
+
+            <p class="portfolio-text">
+              A creative showcase for social media post
+              design, consistent visual communication
+              and audience engagement planning.
+            </p>
+
+            <div class="portfolio-tags">
+              <span>Post Design</span>
+              <span>Content Strategy</span>
+              <span>Engagement</span>
+            </div>
+
+          </div>
+
+        </a>
+
+      </article>
+
+    </div>
+
+
+    <!-- BOTTOM CTA -->
+    <div class="portfolio-footer">
+
+      <div class="portfolio-footer-copy">
+        <span class="portfolio-footer-label">
+          YOUR IDEA COULD BE NEXT
+        </span>
+
+        <p>
+          Have a project in mind?
+          <span>Let's make it happen.</span>
+        </p>
+      </div>
+
+      <a href="#contact" class="portfolio-cta">
+        Start a Project
+        <span aria-hidden="true">↗</span>
+      </a>
+
+    </div>
+
+  </div>
+
+      </section>
+
+<!-- END SECTION 05 -->
+
+
+
+    <!-- ========================================
+         SECTION 06: CONTACT PLACEHOLDER
+         Replace with the final Contact Section later
+    ========================================= -->
+    
+<!-- ==========================================
+     SECTION 06 — CONTACT & PROJECT INQUIRY
+========================================== -->
+
+<section
+  class="contact-section"
+  id="contact"
+  aria-labelledby="contact-heading"
+>
+  <div class="contact-ambient" aria-hidden="true"></div>
+
+  <div class="contact-container">
+
+    <!-- INTRO -->
+    <header class="contact-intro">
+
+      <div class="contact-eyebrow">
+        <span class="contact-eyebrow-line"></span>
+        <span>LET'S CONNECT / 04</span>
+      </div>
+
+      <h2 class="contact-heading" id="contact-heading">
+        Let's Build
+        <span>Something Great.</span>
+      </h2>
+
+      <p class="contact-description">
+        Have a goal in mind? Tell us what you want to achieve.
+        We'll help you explore the right package for your needs.
+      </p>
+
+    </header>
+
+
+    <!-- CONTACT LAYOUT -->
+    <div class="contact-layout">
+
+      <!-- LEFT: CONTACT INFORMATION -->
+      <aside class="contact-sidebar">
+
+        <span class="contact-small-label">
+          START A CONVERSATION
+        </span>
+
+        <h3 class="contact-sidebar-title">
+          Your next big idea starts here.
+        </h3>
+
+        <p class="contact-sidebar-text">
+          Whether you need a growth package or a customized
+          Infinity solution, share your requirements with us.
+        </p>
+
+        <!-- EMAIL -->
+        <a
+          class="contact-method"
+          href="mailto:YOUR_EMAIL@example.com"
+        >
+          <span class="contact-method-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <rect
+                x="3" y="5" width="18" height="14" rx="3"
+                stroke="currentColor" stroke-width="1.6"
+              />
+              <path
+                d="M4 7L12 13L20 7"
+                stroke="currentColor" stroke-width="1.6"
+                stroke-linecap="round" stroke-linejoin="round"
+              />
+            </svg>
+          </span>
+
+          <span class="contact-method-copy">
+            <span class="contact-method-label">EMAIL US</span>
+            <span class="contact-method-value">
+              YOUR_EMAIL@example.com
+            </span>
+          </span>
+
+          <span class="contact-method-arrow" aria-hidden="true">↗</span>
+        </a>
+
+
+        <!-- WHATSAPP -->
+        <a
+          class="contact-method"
+          href="https://wa.me/YOURWHATSAPPNUMBER"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span class="contact-method-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path
+                d="M20 11.6A8.1 8.1 0 0 1 8.2 19L4 20L5.3 16A8.1 8.1 0 1 1 20 11.6Z"
+                stroke="currentColor" stroke-width="1.6"
+                stroke-linecap="round" stroke-linejoin="round"
+              />
+              <path
+                d="M9 8.5C9.3 11 11 12.7 13.5 13.5"
+                stroke="currentColor" stroke-width="1.6"
+                stroke-linecap="round"
+              />
+            </svg>
+          </span>
+
+          <span class="contact-method-copy">
+            <span class="contact-method-label">CHAT WITH US</span>
+            <span class="contact-method-value">
+              WhatsApp Inquiry
+            </span>
+          </span>
+
+          <span class="contact-method-arrow" aria-hidden="true">↗</span>
+        </a>
+
+
+        <!-- PACKAGE NOTE -->
+        <div class="contact-note">
+          <span class="contact-note-icon" aria-hidden="true">✦</span>
+
+          <p>
+            <strong>Need something unique?</strong>
+            <span>
+              Choose Infinity to discuss a package tailored
+              to your goals and budget.
+            </span>
+          </p>
+        </div>
+
+        <!-- DECORATIVE ORBIT -->
+        <div class="contact-orbit-art" aria-hidden="true">
+          <div class="contact-orbit-ring"></div>
+          <div class="contact-orbit-ring contact-orbit-ring-two"></div>
+          <div class="contact-orbit-core">
+            <span>∞</span>
+          </div>
+        </div>
+
+      </aside>
+
+
+      <!-- RIGHT: INQUIRY FORM -->
+      <div class="contact-form-panel">
+
+        <div class="contact-form-heading">
+          <span class="contact-form-step">PROJECT INQUIRY / 01</span>
+
+          <h3>Tell us about your project.</h3>
+
+          <p>Fill in the details below to get started.</p>
+        </div>
+
+
+        <form class="contact-form" id="contactForm">
+
+          <!-- NAME -->
+          <div class="contact-field">
+            <label for="contactName">Your name</label>
+
+            <input
+              id="contactName"
+              name="name"
+              type="text"
+              placeholder="Enter your full name"
+              autocomplete="name"
+              required
+              minlength="2"
+              maxlength="100"
+            />
+          </div>
+
+
+          <!-- EMAIL -->
+          <div class="contact-field">
+            <label for="contactEmail">Email address</label>
+
+            <input
+              id="contactEmail"
+              name="email"
+              type="email"
+              placeholder="you@example.com"
+              autocomplete="email"
+              required
+              maxlength="254"
+            />
+          </div>
+
+
+          <!-- PACKAGE -->
+          <div class="contact-field">
+            <label for="contactPackage">Choose your package</label>
+
+            <div class="contact-select-wrap">
+              <select
+                id="contactPackage"
+                name="package"
+                required
+              >
+                <option value="" selected disabled>
+                  Select a package
+                </option>
+
+                <option value="Silver">Silver</option>
+                <option value="Gold">Gold</option>
+                <option value="Platinum">Platinum</option>
+                <option value="Infinity">Infinity — Custom Package</option>
+              </select>
+            </div>
+          </div>
+
+
+          <!-- BUDGET -->
+          <div class="contact-field">
+            <label for="contactBudget">
+              Budget range <span>(optional)</span>
+            </label>
+
+            <select id="contactBudget" name="budget">
+              <option value="">Choose your budget</option>
+              <option value="Discuss my budget">
+                I'd like to discuss my budget
+              </option>
+              <option value="Entry-level">Entry-level</option>
+              <option value="Mid-range">Mid-range</option>
+              <option value="Premium">Premium</option>
+            </select>
+          </div>
+
+
+          <!-- MESSAGE -->
+          <div class="contact-field">
+            <label for="contactMessage">Project details</label>
+
+            <textarea
+              id="contactMessage"
+              name="message"
+              rows="4"
+              maxlength="2000"
+              placeholder="Tell us about your goals, requirements or ideas..."
+              required
+              minlength="10"
+            ></textarea>
+          </div>
+
+
+          <!-- SUBMIT -->
+          <button
+            class="contact-submit"
+            type="submit"
+          >
+            <span>Continue to WhatsApp</span>
+
+            <span class="contact-submit-arrow" aria-hidden="true">
+              ↗
+            </span>
+          </button>
+
+          <p class="contact-privacy-note">
+            Your information will be used to prepare your inquiry.
+            Submitting opens WhatsApp with a message for you to review.
+          </p>
+
+          <p
+            class="contact-form-status"
+            id="contactFormStatus"
+            role="status"
+            aria-live="polite"
+          ></p>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ==========================================
+     FOOTER
+========================================== -->
+
+<footer class="site-footer">
+
+  <div class="footer-container">
+
+    <a class="footer-brand" href="#home">
+      <span class="footer-brand-symbol">∞</span>
+      <span>YOUR BRAND</span>
+    </a>
+
+    <p class="footer-copy">
+      © <span id="footerYear"></span> YOUR BRAND.
+      All rights reserved.
+    </p>
+
+    <nav class="footer-links" aria-label="Footer navigation">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+  </div>
+
+</footer>
+
+<!-- END CONTACT & FOOTER -->
+
+
+  </main>
+
+</body>
+</html>

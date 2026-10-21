@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080810">
+  <meta name="description" content="Abir — Creative Developer crafting immersive digital experiences.">
+  <title>Abir — Creative Developer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="abir-portfolio.css">
+  <script src="abir-portfolio.js" defer></script>
+</head>
+<body>
+  <!-- Minimal hello loader: all shapes are drawn with code, no image files. -->
+  <div class="preloader" id="preloader" role="status" aria-label="Loading portfolio">
+    <div class="hello-loader">
+      <h1 class="hello-text">hello</h1>
+      <div class="hello-underline" aria-hidden="true">
+        <div class="underline-track">
+          <div class="underline-progress" id="loader-progress"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="navbar">
+    <a class="logo" href="#home" aria-label="Abir home">
+      <span class="logo-mark">A</span>
+      <span>abir<span class="logo-dot">.</span></span>
+    </a>
+
+    <button class="menu-toggle" type="button" aria-label="Open navigation"
+      aria-expanded="false" aria-controls="nav-links">
+      <span></span><span></span>
+    </button>
+
+    <nav class="nav-links" id="nav-links" aria-label="Main navigation">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#services" class="nav-link">Services</a>
+      <a href="#work" class="nav-link">Projects</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+
+    <a class="nav-cta magnetic" href="#contact">Let's Talk <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-grid" aria-hidden="true"></div>
+
+      <div class="hero-content">
+        <div class="availability reveal">
+          <span class="status-dot"></span>
+          <span>AVAILABLE FOR OPPORTUNITIES</span>
+        </div>
+
+        <p class="eyebrow reveal">DESIGN · CODE · EXPERIENCE</p>
+
+        <h1 class="hero-title reveal">
+          Building the
+          <span class="title-line"><span class="gradient-text">digital</span> future<span class="title-period">.</span></span>
+        </h1>
+
+        <p class="hero-description reveal">
+          Hey, I'm <strong>Abir</strong> — a creative developer passionate about
+          crafting immersive digital experiences with design, technology and a
+          little bit of magic.
+        </p>
+
+        <div class="hero-actions reveal">
+          <a class="button button-primary magnetic" href="#work">Explore My Work <span>↗</span></a>
+          <a class="button button-secondary magnetic" href="#contact">Let's Connect <span>→</span></a>
+        </div>
+
+        <div class="hero-meta reveal">
+          <div class="meta-item"><span class="meta-symbol">✳</span><span>Creative Development</span></div>
+          <div class="meta-item"><span class="meta-symbol">◈</span><span>Interactive Experiences</span></div>
+        </div>
+      </div>
+
+      <!-- CSS-only 3D artwork. Replace nothing; it needs no image asset. -->
+      <div class="visual-stage" aria-label="Abstract animated 3D artwork">
+        <div class="orbit orbit-outer" data-depth="22"></div>
+        <div class="orbit orbit-inner" data-depth="14"></div>
+
+        <div class="floating-cube cube-one" data-depth="38" aria-hidden="true">
+          <div class="cube-face cube-front">A</div>
+          <div class="cube-face cube-back"></div>
+          <div class="cube-face cube-right"></div>
+          <div class="cube-face cube-left"></div>
+          <div class="cube-face cube-top"></div>
+          <div class="cube-face cube-bottom"></div>
+        </div>
+
+        <div class="core-object" data-depth="30" aria-hidden="true">
+          <div class="core-halo"></div>
+          <div class="core-sphere"><div class="sphere-shine"></div></div>
+          <div class="core-ring"></div>
+          <div class="core-ring core-ring-two"></div>
+        </div>
+
+        <div class="floating-cube cube-two" data-depth="20" aria-hidden="true">
+          <div class="mini-cube"></div>
+        </div>
+
+        <div class="floating-label label-top">
+          <span class="label-icon">✦</span><span>CREATIVE<br>ENERGY</span>
+        </div>
+        <div class="floating-label label-bottom">
+          <span class="label-dot"></span><span>CRAFTED WITH<br>IMAGINATION</span>
+        </div>
+        <div class="visual-caption"><span>FIG. 001</span><span>DIGITAL UNIVERSE</span></div>
+      </div>
+
+      <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+        <span class="scroll-line"></span><span>SCROLL TO EXPLORE</span>
+      </a>
+      <div class="hero-index">01 <span>/</span> 05</div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about-section" id="about">
+      <div class="about-heading reveal">
+        <span class="section-kicker">01 — A LITTLE ABOUT ME</span>
+        <h2>Curious mind.<br><span class="gradient-text">Creative by nature.</span></h2>
+        <p class="about-intro">
+          I enjoy turning ambitious ideas into thoughtful digital experiences —
+          blending design, code, motion, and a little curiosity.
+        </p>
+      </div>
+
+      <div class="about-layout">
+        <!-- Abstract artwork built entirely with CSS; no personal photo required -->
+        <div class="about-visual reveal" aria-label="Abstract CSS artwork">
+          <div class="about-visual-grid"></div>
+          <div class="about-glow"></div>
+          <div class="about-orbit about-orbit-one"></div>
+          <div class="about-orbit about-orbit-two"></div>
+          <div class="about-monogram">A<span>.</span></div>
+          <div class="about-chip about-chip-top"><span class="chip-spark">✦</span> CREATIVE THINKER</div>
+          <div class="about-chip about-chip-bottom"><span class="chip-live"></span> ALWAYS LEARNING</div>
+          <span class="about-visual-index">AB / 001</span>
+        </div>
+
+        <div class="about-details">
+          <article class="about-card about-story reveal">
+            <span class="about-card-number">01 / WHO I AM</span>
+            <h3>Building things that feel as good as they look.</h3>
+            <p>
+              I'm Abir, an aspiring creative developer focused on making the web
+              feel more expressive and memorable. I enjoy clean interfaces,
+              immersive details, and animations that serve a purpose.
+            </p>
+          </article>
+
+          <div class="about-mini-grid">
+            <article class="about-card about-focus reveal">
+              <span class="about-card-icon">✳</span>
+              <h3>Design-minded</h3>
+              <p>Care about spacing, typography, color, and the little details.</p>
+            </article>
+
+            <article class="about-card about-focus reveal">
+              <span class="about-card-icon">⌘</span>
+              <h3>Code curious</h3>
+              <p>Learning by building, testing, and improving every day.</p>
+            </article>
+          </div>
+
+          <div class="about-skills reveal">
+            <span class="about-card-number">02 / WHAT I EXPLORE</span>
+            <div class="skill-list">
+              <span>UI Design</span>
+              <span>Frontend Development</span>
+              <span>3D &amp; Motion</span>
+              <span>Creative Coding</span>
+              <span>Responsive Design</span>
+              <span>Interaction Design</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-bottom-line reveal">
+        <span>GOOD DESIGN IS FELT, NOT JUST SEEN.</span>
+        <span class="about-bottom-symbol">↘</span>
+      </div>
+    </section>
+
+    
+    <!-- SERVICES SECTION: an infinite, CSS-driven service carousel -->
+    <section class="services-section" id="services">
+      <div class="services-heading reveal">
+        <div>
+          <span class="section-kicker">02 — WHAT I CAN HELP WITH</span>
+          <h2>Useful skills.<br><span class="gradient-text">Thoughtful solutions.</span></h2>
+        </div>
+        <p>Creative digital services for personal brands, small businesses, and ideas that deserve a strong online presence.</p>
+      </div>
+
+      <div class="services-marquee" aria-label="Available creative services">
+        <div class="services-track">
+          <div class="service-card">
+            <div class="service-card-top"><span class="service-icon icon-web">↗</span><span class="service-index">01 / 06</span></div>
+            <h3>Website Design</h3>
+            <p>Modern, responsive websites with clear layouts, strong visual identity, and smooth interactions.</p>
+            <div class="service-tags"><span>Responsive</span><span>Visual Design</span></div>
+            <span class="service-card-glow"></span>
+          </div>
+
+          <div class="service-card">
+            <div class="service-card-top"><span class="service-icon icon-ui">▦</span><span class="service-index">02 / 06</span></div>
+            <h3>UI / UX Design</h3>
+            <p>Clean user interfaces and simple journeys that help people understand what to do next.</p>
+            <div class="service-tags"><span>Wireframes</span><span>Prototypes</span></div>
+            <span class="service-card-glow"></span>
+          </div>
+
+          <div class="service-card">
+            <div class="service-card-top"><span class="service-icon icon-product">◇</span><span class="service-index">03 / 06</span></div>
+            <h3>Product Design</h3>
+            <p>Digital product concepts, dashboard screens, and app experiences shaped around user needs.</p>
+            <div class="service-tags"><span>Web Apps</span><span>App UI</span></div>
+            <span class="service-card-glow"></span>
+          </div>
+
+          <div class="service-card">
+            <div class="service-card-top"><span class="service-icon icon-landing">⌁</span><span class="service-index">04 / 06</span></div>
+            <h3>Landing Pages</h3>
+            <p>Focused landing pages for launches, campaigns, portfolios, and services with clear calls to action.</p>
+            <div class="service-tags"><span>Campaigns</span><span>Conversion-focused</span></div>
+            <span class="service-card-glow"></span>
+          </div>
+
+          <div class="service-card">
+            <div class="service-card-top"><span class="service-icon icon-shop">⌘</span><span class="service-index">05 / 06</span></div>
+            <h3>E-commerce Design</h3>
+            <p>Product pages and storefront layouts that present products clearly and make browsing easier.</p>
+            <div class="service-tags"><span>Product Pages</span><span>Storefronts</span></div>
+            <span class="service-card-glow"></span>
+          </div>
+
+          <div class="service-card">
+            <div class="service-card-top"><span class="service-icon icon-ai">✳</span><span class="service-index">06 / 06</span></div>
+            <h3>AI-assisted Visuals</h3>
+            <p>Creative visual concepts and AI-assisted assets for moodboards, content, and digital campaigns.</p>
+            <div class="service-tags"><span>AI Concepts</span><span>Art Direction</span></div>
+            <span class="service-card-glow"></span>
+          </div>
+
+          <!-- Duplicate cards create the seamless infinite loop. -->
+          <div class="service-card service-card-duplicate" aria-hidden="true">
+            <div class="service-card-top"><span class="service-icon icon-web">↗</span><span class="service-index">01 / 06</span></div>
+            <h3>Website Design</h3><p>Modern, responsive websites with clear layouts, strong visual identity, and smooth interactions.</p><div class="service-tags"><span>Responsive</span><span>Visual Design</span></div><span class="service-card-glow"></span>
+          </div>
+          <div class="service-card service-card-duplicate" aria-hidden="true">
+            <div class="service-card-top"><span class="service-icon icon-ui">▦</span><span class="service-index">02 / 06</span></div>
+            <h3>UI / UX Design</h3><p>Clean user interfaces and simple journeys that help people understand what to do next.</p><div class="service-tags"><span>Wireframes</span><span>Prototypes</span></div><span class="service-card-glow"></span>
+          </div>
+          <div class="service-card service-card-duplicate" aria-hidden="true">
+            <div class="service-card-top"><span class="service-icon icon-product">◇</span><span class="service-index">03 / 06</span></div>
+            <h3>Product Design</h3><p>Digital product concepts, dashboard screens, and app experiences shaped around user needs.</p><div class="service-tags"><span>Web Apps</span><span>App UI</span></div><span class="service-card-glow"></span>
+          </div>
+          <div class="service-card service-card-duplicate" aria-hidden="true">
+            <div class="service-card-top"><span class="service-icon icon-landing">⌁</span><span class="service-index">04 / 06</span></div>
+            <h3>Landing Pages</h3><p>Focused landing pages for launches, campaigns, portfolios, and services with clear calls to action.</p><div class="service-tags"><span>Campaigns</span><span>Conversion-focused</span></div><span class="service-card-glow"></span>
+          </div>
+          <div class="service-card service-card-duplicate" aria-hidden="true">
+            <div class="service-card-top"><span class="service-icon icon-shop">⌘</span><span class="service-index">05 / 06</span></div>
+            <h3>E-commerce Design</h3><p>Product pages and storefront layouts that present products clearly and make browsing easier.</p><div class="service-tags"><span>Product Pages</span><span>Storefronts</span></div><span class="service-card-glow"></span>
+          </div>
+          <div class="service-card service-card-duplicate" aria-hidden="true">
+            <div class="service-card-top"><span class="service-icon icon-ai">✳</span><span class="service-index">06 / 06</span></div>
+            <h3>AI-assisted Visuals</h3><p>Creative visual concepts and AI-assisted assets for moodboards, content, and digital campaigns.</p><div class="service-tags"><span>AI Concepts</span><span>Art Direction</span></div><span class="service-card-glow"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="services-bottom reveal">
+        <span>DESIGN × TECHNOLOGY × IMAGINATION</span>
+        <a class="services-cta" href="#contact">LET'S CREATE SOMETHING <span>↗</span></a>
+      </div>
+    </section>
+
+    <section class="projects-section" id="work">
+      <div class="projects-heading reveal">
+        <div>
+          <span class="section-kicker">03 — SELECTED WORK</span>
+          <h2>Ideas made<br><span class="gradient-text">visible.</span></h2>
+        </div>
+        <p class="projects-intro">Two creative concepts exploring clean interfaces, visual storytelling, and interactive design.</p>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card project-one reveal">
+          <div class="project-visual visual-dashboard">
+            <div class="project-visual-top"><span class="visual-brand"><span>A.</span> studio</span><span class="visual-status">CONCEPT / 001</span></div>
+            <div class="dashboard-grid"></div>
+            <div class="dashboard-content">
+              <span class="dashboard-eyebrow">CREATIVE DIGITAL STUDIO</span>
+              <h3>Design beyond<br>the ordinary<span>.</span></h3>
+              <div class="dashboard-bottom"><span>Ideas into experiences.</span><div class="dashboard-circle">↗</div></div>
+            </div>
+            <div class="dashboard-orb orb-one"></div><div class="dashboard-orb orb-two"></div>
+          </div>
+          <div class="project-info">
+            <div class="project-title-row"><div><span class="project-number">PROJECT 01</span><h3>Creative Studio Website</h3></div><a href="#contact" class="project-arrow" aria-label="Discuss a creative studio website">↗</a></div>
+            <p>A bold website concept featuring editorial typography, layered CSS visuals, and smooth interactions.</p>
+            <div class="project-tags"><span>Website Design</span><span>Frontend</span><span>Motion</span></div>
+          </div>
+        </article>
+
+        <article class="project-card project-two reveal">
+          <div class="project-visual visual-orbit">
+            <div class="project-visual-top"><span class="visual-brand"><span>O</span>rbital</span><span class="visual-status">EXPERIMENT / 002</span></div>
+            <div class="orbit-showcase"><div class="showcase-ring showcase-ring-one"></div><div class="showcase-ring showcase-ring-two"></div><div class="showcase-ring showcase-ring-three"></div><div class="showcase-planet"><div class="planet-highlight"></div></div><div class="showcase-satellite satellite-one"></div><div class="showcase-satellite satellite-two"></div></div>
+            <div class="orbit-caption"><span>INTERACTIVE SPACE</span><span>∞</span></div>
+          </div>
+          <div class="project-info">
+            <div class="project-title-row"><div><span class="project-number">PROJECT 02</span><h3>Orbital 3D Experience</h3></div><a href="#contact" class="project-arrow" aria-label="Discuss an interactive 3D experience">↗</a></div>
+            <p>A futuristic visual experiment exploring depth, ambient lighting, and spatial interaction.</p>
+            <div class="project-tags"><span>3D Concepts</span><span>Creative Code</span><span>Interaction</span></div>
+          </div>
+        </article>
+      </div>
+
+      <div class="projects-footer reveal"><span>SMALL DETAILS. BIG IMPRESSIONS.</span><a href="#contact">HAVE A PROJECT IN MIND? <span>↗</span></a></div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="contact-orb contact-orb-one" aria-hidden="true"></div>
+      <div class="contact-orb contact-orb-two" aria-hidden="true"></div>
+
+      <div class="contact-content reveal">
+        <span class="section-kicker">04 — YOUR IDEA STARTS HERE</span>
+        <h2>Have something<br>in mind? <span class="gradient-text">Let's make it real.</span></h2>
+        <p>Need a website, a product interface, or a fresh visual concept? Tell me what you're building and let's explore the possibilities together.</p>
+        <div class="contact-actions">
+          <a class="button button-primary magnetic" href="mailto:hello@example.com?subject=Let's%20work%20together">Start a conversation <span>↗</span></a>
+          <a class="button button-secondary magnetic" href="#home">Back to the top ↑</a>
+        </div>
+      </div>
+
+      <div class="contact-side reveal">
+        <div class="contact-note"><span class="contact-note-mark">✳</span><div><span class="contact-label">OPEN TO</span><strong>Creative collaborations</strong></div></div>
+        <div class="contact-note"><span class="contact-note-mark">↗</span><div><span class="contact-label">FOCUS</span><strong>Design · Web · AI visuals</strong></div></div>
+        <div class="contact-email"><span class="contact-label">EMAIL</span><a href="mailto:hello@example.com">hello@example.com ↗</a><small>Replace this example email with your real email.</small></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>© <span id="year"></span> ABIR</span>
+    <span>DESIGNED WITH INTENTION.</span>
+    <a href="#home">BACK TO TOP ↑</a>
+  </footer>
+</body>
+</html>
